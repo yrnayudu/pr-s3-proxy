@@ -7,8 +7,8 @@ var app = express();
 app.get('/*', s3Proxy({
   bucket: 'rp-temp-reports',
   prefix: 'test-reports',
-  accessKeyId: 'AKIA4WBIWDIPEJ7ZZSVE',
-  secretAccessKey: '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',
+  accessKeyId: '<access-key',
+  secretAccessKey: '<secret-access-key>',
   overrideCacheControl: 'max-age=1000'
 }));
 
